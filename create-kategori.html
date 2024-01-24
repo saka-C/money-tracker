@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper container-form">
+            <div class="header-form">                    
+                <div class="button-back" onclick="goBack()">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+            </div>
+            <form action="">
+                <h2>Tambah Kategori</h2>
+                <div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" name="nama" placeholder="Masukan nama">
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kategori</label>
+                    <div class="cover-radio-button">
+                        <div class="radio-button" onclick="selectRadioButton('pemasukan_id', this)">
+                            <label for="pemasukan_id">Pemasukan</label>
+                            <input type="radio" name="kategori" hidden id="pemasukan_id" value="pemasukan">
+                        </div>
+
+                        <div class="radio-button" onclick="selectRadioButton('pengeluaran_id', this)">
+                            <label for="pengeluaran_id">Pengeluaran</label>
+                            <input type="radio" name="kategori" hidden id="pengeluaran_id" value="pengeluaran">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-submit">
+                    <button type="submit">Tambahkan</button>
+                </div>
+            </form>
+
+            <div class="store-container">
+                <span class="text light">Data yang tersimpan</span>
+                <div class="row-data">
+                    <div class="top-row">
+                        <span class="text">Dibuat pada <span class="highlight">10-12-20024</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
