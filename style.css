@@ -3,6 +3,7 @@
 :root {
     --body-color: #FBFBFB;
     --primary-color-green: #00BF71;
+    --primary-color-orange:#FE7A36;
     --soft-green: #00bf6f13;
     --primary-color-red: #DB4437;
     --primary-color-light: #FFFFFF;
@@ -10,6 +11,7 @@
     --shadow-color: rgba(0, 0, 0, 0.096);
     --text-color: #4B4B4B;
     --inner-text: #a1a1a1;
+    --dark-green: #009c5b9a;
 
     /* transition */
     --tran-01: all 0.1s ease;
@@ -29,8 +31,12 @@ body {
 a {
     text-decoration: none;
 }
-.light{
+.container .light{
     color: var(--primary-color-light);
+    font-weight: 300;
+}
+.m-top{
+    margin-top: 20px;
 }
 
 header {
@@ -214,6 +220,8 @@ header {
 .row-data .desc {
     border-bottom: 1px solid var(--stroke-color);
     padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bottom-row {
@@ -238,13 +246,12 @@ header {
 }
 
 .container-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     padding: 20px;
     border: 1px solid var(--stroke-color);
     border-radius: 3px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-group {
@@ -252,7 +259,35 @@ header {
     flex-direction: column;
     width: 100%;
 }
+.simple-form form{
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--primary-color-green);
+    gap: 0px;
+}
+.simple-form h2{
+    color: var(--primary-color-light);
+}
+.simple-form input{
+    background-color: var(--primary-color-light);
+    border-radius: 30px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+.simple-form .text{
+    margin-top: -2px;
+}
 
+.simple-form .button-submit button{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 50px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    color: var(--primary-color-light);
+    background-color: var(--primary-color-orange);
+}
 label {
     font-size: 13px;
 }
@@ -298,13 +333,9 @@ textarea:focus{
 h2 {
     text-align: start;
     color: var(--text-color);
+    margin: 5px;
 }
 
-@media screen and (max-width: 414px) {
-    .container-form form {
-        width: 90%;
-    }
-}
 
 option{
    display: flex;
@@ -318,23 +349,30 @@ option{
 }
 
 .radio-button {
-    border: 2px solid var(--stroke-color);
+    background-color: var(--dark-green);
+    font-weight: 700;
+    color: var(--primary-color-light);
     margin-top: 5px;
     margin-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 30px;
     align-items: center;
     justify-content: space-between;
     display: flex;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .cover-radio-button {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
 }
 
 .checked {
-    border-color: var(--primary-color-green);
+    background-color: var(--primary-color-orange);
+    transition: var(--tran-03);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transform: scale(1.1,1.1);
 }
 
 .button-back {
@@ -342,7 +380,7 @@ option{
     align-content: center;
     cursor: pointer;
     width: fit-content;
-    padding: 7px;
+    padding: 5px;
     font-size: 20px;
     border-radius: 50%;
     background-color: var(--stroke-color);
@@ -353,11 +391,10 @@ option{
 }
 .header-form{
     background-color: var(--body-color);
-    padding: 20px;
-    width: 100%;
+    padding: 10px;
 }
 .store-container{
-    margin: 20px;
     padding: 10px;
-    background-color: var(--primary-color-green);        
+    margin: 10px;
+    background-color: var(--body-color);        
 }

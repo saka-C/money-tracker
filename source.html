@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper container-form simple-form">
+            <div class="header-form">                    
+                <div class="button-back" onclick="goBack()">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+            </div>
+            <form action="">
+                <h2>Tambah Sumber<p class="text light">Kamu bisa mencatat keuangan kamu sesuai dimana kamu menyimpan uang mu</p></h2>
+                <div class="form-group">
+                    <input type="text" name="nama" placeholder="Masukan nama sumber baru">
+                </div>
+
+                <div class="button-submit m-top">
+                    <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </form>
+
+            <div class="data store-container">
+                <span class="text" style="margin: 10px;">Data yang tersimpan</span>
+
+                <!-- foreach -->
+                <div class="row-data">
+                    <div class="desc">
+                        <span class="highlight">Dompet Fisik</span>
+                        <span class="green">Rp. 3.000.000</span>
+                    </div>
+                    <div class="bottom-row">
+                        <span class="text">Dibuat pada <span class="highlight">10-12-2024</span></span>
+                        <div class="action">
+                            <a href="#"><i class='bx bx-trash-alt'></i></a>
+                            <a href="#"><i class='bx bxs-edit-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- endforeach -->
+
+                <!-- foreach -->
+                <div class="row-data">
+                    <div class="desc">
+                        <span class="highlight">Kredit BCA</span>
+                        <span class="green">Rp. 1.000.000</span>
+                    </div>
+                    <div class="bottom-row">
+                        <span class="text">Dibuat pada <span class="highlight">10-12-2024</span></span>
+                        <div class="action">
+                            <a href="#"><i class='bx bx-trash-alt'></i></a>
+                            <a href="#"><i class='bx bxs-edit-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- endforeach -->
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
