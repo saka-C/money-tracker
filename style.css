@@ -12,6 +12,8 @@
     --text-color: #4B4B4B;
     --inner-text: #a1a1a1;
     --dark-green: #009c5b9a;
+    --primary-color-blue: #5454c5;
+    --shadow-popup: rgba(0, 0, 0, 0.701);
 
     /* transition */
     --tran-01: all 0.1s ease;
@@ -26,6 +28,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: var(--body-color);
     height: 100vh;
+    box-sizing: border-box;
 }
 
 a {
@@ -35,9 +38,7 @@ a {
     color: var(--primary-color-light);
     font-weight: 300;
 }
-.m-top{
-    margin-top: 20px;
-}
+
 
 header {
     text-align: center;
@@ -54,6 +55,35 @@ header {
         padding: 20px;
     }
 }
+
+/* property */
+.m-top{
+    margin-top: 20px;
+}
+.highlight {
+    font-weight: 600;
+}
+
+.text{
+    font-size: 13px;
+    color: var(--text-color);
+}
+.in {
+    color: var(--primary-color-green);
+}
+
+.out {
+    color: var(--primary-color-red);
+}
+.green {
+    color: var(--primary-color-green);
+}
+
+.red {
+    color: var(--primary-color-red);
+}
+
+/* end property */
 
 .container {
     display: flex;
@@ -75,14 +105,6 @@ header {
     font-weight: 300;
 }
 
-.highlight {
-    font-weight: 600;
-}
-
-.text{
-    font-size: 13px;
-    color: var(--text-color);
-}
 
 .icon {
     color: var(--primary-color-green);
@@ -111,13 +133,7 @@ header {
     display: flex;
     flex-direction: column;
 }
-.in {
-    color: var(--primary-color-green);
-}
 
-.out {
-    color: var(--primary-color-red);
-}
 
 .new-note {
     display: flex;
@@ -196,13 +212,6 @@ header {
     border-radius: 5px;
 }
 
-.green {
-    color: var(--primary-color-green);
-}
-
-.red {
-    color: var(--primary-color-red);
-}
 
 .top-row {
     display: flex;
@@ -368,7 +377,7 @@ option{
     margin-top: 10px;
 }
 
-.checked {
+.cover-radio-button .checked {
     background-color: var(--primary-color-orange);
     transition: var(--tran-03);
     box-shadow: 0 2px 4px var(--shadow-color);
@@ -397,4 +406,58 @@ option{
     padding: 10px;
     margin: 10px;
     background-color: var(--body-color);        
+}
+
+.wallet-popup{
+    background-color: var(--shadow-popup);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wallet-popup-content{
+    background-color: var(--body-color);
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.wallet-popup .checked{
+    border: 2px solid var(--primary-color-green);
+    border-radius: 5px;
+}
+.radio-wallet-option{
+    padding: 5px;
+    border: 2px solid var(--stroke-color);
+    display: flex;
+    align-items: center;
+}
+.radio-wallet-option .wallet-type{
+    background-color: var(--primary-color-green);
+    border-radius: 3px;
+    color: var(--body-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.radio-wallet-option .wallet-option{
+    display: flex;
+    flex-direction: column;
+}
+.close{
+    background-color: var(--primary-color-green);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--body-color);
 }
