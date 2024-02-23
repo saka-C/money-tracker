@@ -17,3 +17,17 @@ function selectRadioButton(id, describeElement) {
 function goBack() {
     window.history.back(); // Fungsi untuk kembali ke halaman sebelumnya
 }
+
+const btnPopup = document.getElementById('popupBtn');
+const walletPopup = document.querySelector('.wallet-popup');
+
+
+
+btnPopup.addEventListener("click", (e) => {
+    walletPopup.classList.add("show");
+    e.preventDefault();
+});
+
+function closeBtn(){
+    walletPopup.classList.remove("show");
+}

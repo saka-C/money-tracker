@@ -4,6 +4,7 @@
     --body-color: #FBFBFB;
     --primary-color-green: #00BF71;
     --primary-color-orange:#FE7A36;
+    --primary-color-blue: #5454c5;
     --soft-green: #00bf6f13;
     --primary-color-red: #DB4437;
     --primary-color-light: #FFFFFF;
@@ -12,7 +13,6 @@
     --text-color: #4B4B4B;
     --inner-text: #a1a1a1;
     --dark-green: #009c5b9a;
-    --primary-color-blue: #5454c5;
     --shadow-popup: rgba(0, 0, 0, 0.701);
 
     /* transition */
@@ -299,6 +299,7 @@ header {
 }
 label {
     font-size: 13px;
+    font-weight: 600;
 }
 
 input,
@@ -307,8 +308,8 @@ textarea {
     font-family: 'poppins';
     border: none;
     border-bottom: 1px solid var(--primary-color-green);
-    padding: 10px;
-    background-color: var(--soft-green);
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 textarea {
@@ -407,8 +408,10 @@ option{
     margin: 10px;
     background-color: var(--body-color);        
 }
-
 .wallet-popup{
+    display: none;
+}
+.wallet-popup.show{
     background-color: var(--shadow-popup);
     width: 100%;
     height: 100%;
@@ -419,15 +422,29 @@ option{
     justify-content: center;
     align-items: center;
 }
-.wallet-popup-content{
+.wallet-popup-content {
     background-color: var(--body-color);
-    width: 30%;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 30%;
     gap: 10px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 850px) {
+    .wallet-popup-content {
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wallet-popup-content {
+        max-width: 70%;
+    }
+}
+
 .wallet-popup .checked{
     border: 2px solid var(--primary-color-green);
     border-radius: 5px;
