@@ -29,7 +29,8 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 })
-=======
+
+
 const btnPopup = document.getElementById('popupBtn');
 const walletPopup = document.querySelector('.wallet-popup');
 
