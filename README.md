@@ -2,7 +2,7 @@
 > ## what it?
 > Money Tracker Neo One is a tool to record our expenses and income so that we know the details of how our finances are used and how much is spent.
 
-# Priview Web
+# Preview Web
 
 ### Home Page
 
