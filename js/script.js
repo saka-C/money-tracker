@@ -18,7 +18,6 @@ function goBack() {
     window.history.back(); // Fungsi untuk kembali ke halaman sebelumnya
 }
 
-<<<<<<< HEAD
 
 // scrolled
 // ================
@@ -44,4 +43,4 @@ btnPopup.addEventListener("click", (e) => {
 function closeBtn(){
     walletPopup.classList.remove("show");
 }
->>>>>>> c42e142aaba0b6cc77a9f3a878fad1ec04e47c73
+
