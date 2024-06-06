@@ -753,6 +753,13 @@ option{
     margin: 10px;
     background-color: var(--body-color);        
 }
+#popupBtn{
+    color: var(--primary-color-light);
+    background-color: var(--primary-color-green);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
 .wallet-popup{
     display: none;
 }
