@@ -7,7 +7,6 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -32,6 +31,7 @@
                         <option value="">Bonus</option>
                     </select>
 
+<<<<<<< HEAD
                     <select name="" id="">
                         <option value="" selected disabled>--Pilih Kategori--</option>
                         <option value="">Dompet <p>Rp.20.000</p>
@@ -41,6 +41,10 @@
                         <option value="">E-wallet <p>Rp.30.000</p>
                         </option>
                     </select>
+=======
+                <div class="form-group">
+                    <button id="popupBtn">Wallet</button>
+>>>>>>> c42e142aaba0b6cc77a9f3a878fad1ec04e47c73
                 </div>
 
                 <div class="form-group">
@@ -53,12 +57,44 @@
                     <input type="date">
                 </div>
 
+                <div class="wallet-popup">
+                    <div class="wallet-popup-content">
+                        <div class="radio-wallet-option" onclick="selectRadioButton('wallet_id', this)">
+                            <div class="wallet-type">
+                                <i class='bx bxs-credit-card' ></i>
+                            </div>
+                            <div class="wallet-option">
+                                <span>ATM</span>
+                                <span class="text">20.000.000</span>
+                            </div>
+                            <input type="radio" name="walletoption" hidden id="wallet_id" value="wallet">
+                        </div>
+
+                        <div class="radio-wallet-option" onclick="selectRadioButton('wallet_id2', this)">
+                            <div class="wallet-type">
+                                <i class='bx bxs-wallet'></i>
+                            </div>
+                            <div class="wallet-option">
+                                <span>Cash</span>
+                                <span class="text">20.000.000</span>
+                            </div>
+                            <input type="radio" name="walletoption" hidden id="wallet_id2" value="wallet">
+                        </div>
+
+                        <div class="close" onclick="closeBtn()">
+                            <span>Tutup</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="button-submit">
                     <button type="submit" class="wrap-btn"><i class='bx bx-right-arrow-alt'></i></button>
                 </div>
             </form>
         </div>
     </div>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>

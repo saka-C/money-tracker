@@ -18,6 +18,7 @@ function goBack() {
     window.history.back(); // Fungsi untuk kembali ke halaman sebelumnya
 }
 
+<<<<<<< HEAD
 
 // scrolled
 // ================
@@ -29,3 +30,18 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 })
+=======
+const btnPopup = document.getElementById('popupBtn');
+const walletPopup = document.querySelector('.wallet-popup');
+
+
+
+btnPopup.addEventListener("click", (e) => {
+    walletPopup.classList.add("show");
+    e.preventDefault();
+});
+
+function closeBtn(){
+    walletPopup.classList.remove("show");
+}
+>>>>>>> c42e142aaba0b6cc77a9f3a878fad1ec04e47c73
