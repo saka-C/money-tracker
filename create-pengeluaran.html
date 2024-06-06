@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./asset/logo-neo1.png" type="image/x-icon">
+    <title>Money Tracker</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <script src="js/script.js"></script>
@@ -17,27 +18,27 @@
                 </div>
             </div>
             <form action="">
-                <h2>Tambah Pengeluaran</h2>
+                <h2>Tambah Pemasukan</h2>
                 <div class="form-group">
-                    <label>Jumlah</label>
                     <input type="number" placeholder="Masukan jumlah">
                 </div>
 
-                <div class="form-group">
-                    <label>Kategori</label>
+                <div class="form-group row">
                     <select name="" id="">
+                        <option value="" selected disabled>--Pilih Kategori--</option>
                         <option value="">Gaji</option>
                         <option value="">Uang Jajan</option>
                         <option value="">Bonus</option>
                     </select>
-                </div>
 
-                <div class="form-group">
-                    <label>Sumber</label>
                     <select name="" id="">
-                        <option value="">Dompet <p>Rp.20.000</p></option>
-                        <option value="">Kartu Kerdit <p>Rp.500.000</p></option>
-                        <option value="">E-wallet <p>Rp.30.000</p></option>
+                        <option value="" selected disabled>--Pilih Kategori--</option>
+                        <option value="">Dompet <p>Rp.20.000</p>
+                        </option>
+                        <option value="">Kartu Kerdit <p>Rp.500.000</p>
+                        </option>
+                        <option value="">E-wallet <p>Rp.30.000</p>
+                        </option>
                     </select>
                 </div>
 
@@ -52,7 +53,7 @@
                 </div>
 
                 <div class="button-submit">
-                    <button type="submit">Tambahkan</button>
+                    <button type="submit" class="wrap-btn"><i class='bx bx-right-arrow-alt'></i></button>
                 </div>
             </form>
         </div>

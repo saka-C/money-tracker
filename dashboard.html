@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./asset/logo-neo1.png" type="image/x-icon">
+    <title>Money Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <header>
+                <span>Hi Shaka, Ayo kita catat keuangan mu hari ini yuk!</span>
+            </header>
+
+            <div class="top-section">
+                <p>Terkini</p>
+                <span class="current-balance">Rp.<span class="highlight">200.000</span></span>
+
+                <div class="information">
+                    <div class="flow">
+                        <span class="text in "><i class='bx bx-plus'></i>Rp.<span class="highlight">400.000,00</span></span>
+                        <span class="text out"><i class='bx bx-minus'></i>Rp.<span class="highlight">200.000,00</span></span>
+                    </div>
+                    <div class="month-used">
+                        <p class="text"><i class='bx bx-bar-chart-alt-2 icon'></i>Terpakai Bulan ini</p>
+                        <span class="rounded">Rp.<span class="highlight">100.000,00</span></span>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="new-note">
+                <a href="create-pemasukan.html" class="in">Pemasukan<i class='bx bx-arrow-to-bottom'></i></a>
+                <a href="create-pengeluaran.html" class="out">Pengeluaran<i class='bx bx-arrow-from-bottom'></i></a>
+            </div>
+
+            <div class="menu">
+                <a href="category.html"><i class='bx bx-category'></i><span>Kategori</span></a>
+                <a href="source.html"><i class='bx bx-wallet' ></i><span>Sumber</span></a>
+                <a href="history.html"><i class='bx bx-history' ></i><span>Riwayat</span></a>
+                <a href="#"><i class='bx bx-pie-chart-alt-2'></i><span>Statistik</span></a>
+            </div>
+
+            <div class="data">
+                <!-- @foreach -->
+                <div class="row-data">
+                    <div class="top-row">
+                        <span class="text">Kategori | <span class="green">Bill</span></span>
+                        <span class="text date">01-10-2024</span>
+                    </div>
+                    <div class="mid-row">Rp.<span class="highlight">200.000,00</span>DANA</div>
+                    <div class="desc text">
+                        Lorem, ipsum dolor.
+                    </div>
+                    <div class="bottom-row">
+                        <span class="out highlight">Pengeluaran</span>
+                        <div class="action">
+                            <a href="#"><i class='bx bx-trash-alt'></i></a>
+                            <a href="#"><i class='bx bxs-edit-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- @endforeach -->
+                <!-- @foreach -->
+                <div class="row-data">
+                    <div class="top-row">
+                        <span class="text">Kategori | <span class="green">Bonus</span></span>
+                        <span class="text date">01-10-2024</span>
+                    </div>
+                    <div class="mid-row">Rp.<span class="highlight">400.000,00</span>Dompet</div>
+                    <div class="desc text">
+                        Lorem, ipsum dolor.
+                    </div>
+                    <div class="bottom-row">
+                        <span class="in highlight">Pemasukan</span>
+                        <div class="action">
+                            <a href="#"><i class='bx bx-trash-alt'></i></a>
+                            <a href="#"><i class='bx bxs-edit-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- @endforeach -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

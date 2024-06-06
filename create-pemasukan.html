@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container  ">
         <div class="wrapper container-form">
             <div class="header-form">                    
                 <div class="button-back" onclick="goBack()">
@@ -21,22 +21,19 @@
             <form action="">
                 <h2>Tambah Pemasukan</h2>
                 <div class="form-group">
-                    <label>Jumlah</label>
                     <input type="number" placeholder="Masukan jumlah">
                 </div>
 
-                <div class="form-group">
-                    <label>Kategori</label>
+                <div class="form-group row">
                     <select name="" id="">
+                        <option value="" selected disabled>--Pilih Kategori--</option>
                         <option value="">Gaji</option>
                         <option value="">Uang Jajan</option>
                         <option value="">Bonus</option>
                     </select>
-                </div>
 
-                <div class="form-group">
-                    <label>Sumber</label>
                     <select name="" id="">
+                        <option value="" selected disabled>--Pilih Kategori--</option>
                         <option value="">Dompet <p>Rp.20.000</p>
                         </option>
                         <option value="">Kartu Kerdit <p>Rp.500.000</p>
@@ -57,7 +54,7 @@
                 </div>
 
                 <div class="button-submit">
-                    <button type="submit">Tambahkan</button>
+                    <button type="submit" class="wrap-btn"><i class='bx bx-right-arrow-alt'></i></button>
                 </div>
             </form>
         </div>
